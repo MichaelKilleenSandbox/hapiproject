@@ -1,0 +1,399 @@
+{
+  "primarySourceLink": {
+    "rel": "primaryLookupSource",
+    "method": null,
+    "url": "http://sdecsvctest02:8080/lookup/api/categories/25069/lookup?vehicleSpec=http%253A%252F%252Fsdecsvctest02%253A8080%252Fvehicle%252Fapi%252Fvehiclespecifications%253Faspiration%253D5%2526baseVehicle%253D125003%2526bedConfig%253D5%2526bodyType%253D0%2526brakeABS%253D8%2526brakeSystem%253D5%2526driveType%253D5%2526engineMfr%253D25%2526engineVIN%253D1%2526engineVersion%253D53%2526frontBrakeType%253D5%2526fuelDeliverySubType%253D5%2526fuelDeliveryType%253D5%2526fuelSystemControlType%253D5%2526fuelSystemDesign%253D60%2526ignitionSystemType%253D6%2526springTypeConfig%253D1%2526steeringConfig%253D1%2526submodel%253D0%2526transmissionMfr%253D25%2526transmissionType%253D6%2526wheelBase%253D1&source=primary",
+    "uri": null,
+    "queryParams": null,
+    "contentType": null
+  },
+  "secondSourceLink": {
+    "rel": "secondaryLookupSource",
+    "method": null,
+    "url": "http://sdecsvctest02:8080/lookup/api/categories/25069/lookup?vehicleSpec=http%253A%252F%252Fsdecsvctest02%253A8080%252Fvehicle%252Fapi%252Fvehiclespecifications%253Faspiration%253D5%2526baseVehicle%253D125003%2526bedConfig%253D5%2526bodyType%253D0%2526brakeABS%253D8%2526brakeSystem%253D5%2526driveType%253D5%2526engineMfr%253D25%2526engineVIN%253D1%2526engineVersion%253D53%2526frontBrakeType%253D5%2526fuelDeliverySubType%253D5%2526fuelDeliveryType%253D5%2526fuelSystemControlType%253D5%2526fuelSystemDesign%253D60%2526ignitionSystemType%253D6%2526springTypeConfig%253D1%2526steeringConfig%253D1%2526submodel%253D0%2526transmissionMfr%253D25%2526transmissionType%253D6%2526wheelBase%253D1&source=secondary",
+    "uri": null,
+    "queryParams": null,
+    "contentType": null
+  },
+  "totalPrimaryProductCount": 2,
+  "totalSecondaryProductCount": 9,
+  "categories": [
+    {
+      "id": 25069,
+      "name": "Ventshades",
+      "itemTypeResults": [
+        {
+          "partTerminologyName": "Side Window Vent",
+          "itemTypeTypeCode": "A",
+          "itemTypeTypeDescription": "Application",
+          "position": "N/A",
+          "primaryProductCount": 1,
+          "secondaryProductCount": 4,
+          "sortedproducts": [
+            {
+              "perCarQty": 1,
+              "partNo": "94462",
+              "fitmentNotes": [
+                "Sub Model:Touring,DX,HF,Hybrid,Hybrid-L,Natural Gas",
+                "Sub Model:LX,EX,Si,EX-L | Body Type:Sedan"
+              ],
+              "generalNotes": [
+                "Ventvisor[R] Deflector 4 pc.",
+                "Smoke"
+              ],
+              "applicationBased": true,
+              "pla": "VEN",
+              "plaName": "Auto Ventshade (AVS)",
+              "warrantyCode": "1YR",
+              "warrantyDescription": "1 YR REPLACEMENT IF DEFECTIVE",
+              "qualityRatingCode": "3",
+              "qualityRatingDescription": "Best",
+              "productDescription": "Ventvisor; Deflector 4 pc.",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/1099720",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/VEN/94462",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/assets/epc125x125/std.lang.all/1005567708.jpg",
+                  "typeCode": "P04",
+                  "typeDesc": "Photo - Primary"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "N",
+              "primaryFlag": true,
+              "sku": "10248587"
+            },
+            {
+              "perCarQty": 1,
+              "partNo": "194462",
+              "fitmentNotes": [
+                "Sub Model:Touring,DX,HF,Hybrid,Hybrid-L,Natural Gas",
+                "Sub Model:LX,EX,Si,EX-L | Body Type:Sedan"
+              ],
+              "generalNotes": [
+                "Ventvisor[R] In-Channel Deflector 4 pc.",
+                "Smoke"
+              ],
+              "applicationBased": true,
+              "pla": "VEN",
+              "plaName": "Auto Ventshade (AVS)",
+              "warrantyCode": "NONE",
+              "warrantyDescription": "REPLACE OR REFUND AT MGR DISCRETION",
+              "qualityRatingCode": "3",
+              "qualityRatingDescription": "Best",
+              "productDescription": "Ventvisor; In-Channel Deflector 4 pc.",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/328469",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/VEN/194462",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/assets/epc125x125/std.lang.all/1009434191.jpg",
+                  "typeCode": "P04",
+                  "typeDesc": "Photo - Primary"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "N",
+              "primaryFlag": false,
+              "sku": "10575856"
+            },
+            {
+              "perCarQty": 1,
+              "partNo": "894050",
+              "fitmentNotes": [
+                "Body Type:Coupe"
+              ],
+              "generalNotes": [
+                "Ventvisor[R] Low Profile Deflector 4 pc.",
+                "Smoke"
+              ],
+              "applicationBased": true,
+              "pla": "VEN",
+              "plaName": "Auto Ventshade (AVS)",
+              "warrantyCode": "NONE",
+              "warrantyDescription": "REPLACE OR REFUND AT MGR DISCRETION",
+              "qualityRatingCode": "3",
+              "qualityRatingDescription": "Best",
+              "productDescription": "SideWindowVent",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/533499",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/VEN/894050",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/assets/epc125x125/std.lang.all/1014806067.jpg",
+                  "typeCode": "P04",
+                  "typeDesc": "Photo - Primary"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "N",
+              "primaryFlag": false,
+              "sku": "11189569"
+            },
+            {
+              "perCarQty": 1,
+              "partNo": "82699",
+              "fitmentNotes": [
+                "Sub Model:Touring,DX,HF,Hybrid,Hybrid-L,Natural Gas",
+                "Sub Model:LX,EX,Si,EX-L | Body Type:Sedan"
+              ],
+              "generalNotes": [
+                "4 pc.; Dark Tint"
+              ],
+              "applicationBased": true,
+              "pla": "WTH",
+              "plaName": "WeatherTech",
+              "warrantyCode": "3YR",
+              "warrantyDescription": "3 YR REPLACEMENT IF DEFECTIVE",
+              "qualityRatingCode": "4",
+              "qualityRatingDescription": "Premium",
+              "productDescription": "SideWindowVent",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/30639",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/WTH/82699",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/images/epc125x125/no-image.jpg"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "N",
+              "primaryFlag": false,
+              "sku": "10902712"
+            },
+            {
+              "perCarQty": 1,
+              "partNo": "72-44488",
+              "fitmentNotes": [
+                "Sub Model:Touring,Hybrid",
+                "Sub Model:LX,EX,EX-L | Body Type:Sedan"
+              ],
+              "generalNotes": [
+                "Wade Slim Wind Deflector",
+                "4 pc.; Smoke"
+              ],
+              "applicationBased": true,
+              "pla": "WTN",
+              "plaName": "Westin",
+              "warrantyCode": "1YR",
+              "warrantyDescription": "1 YR REPLACEMENT IF DEFECTIVE",
+              "qualityRatingCode": "3",
+              "qualityRatingDescription": "Best",
+              "productDescription": "Wade Slim Wind Deflector",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/909517",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/WTN/7244488",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/assets/epc125x125/std.lang.all/1009066334.jpg",
+                  "typeCode": "P04",
+                  "typeDesc": "Photo - Primary"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "N",
+              "primaryFlag": false,
+              "sku": "10470722"
+            }
+          ]
+        },
+        {
+          "partTerminologyName": "Side Window Vent",
+          "itemTypeTypeCode": "A",
+          "itemTypeTypeDescription": "Application",
+          "position": "Front",
+          "primaryProductCount": 1,
+          "secondaryProductCount": 4,
+          "sortedproducts": [
+            {
+              "perCarQty": 1,
+              "partNo": "92729",
+              "fitmentNotes": [
+                "Body Type:Coupe"
+              ],
+              "generalNotes": [
+                "Ventvisor[R] Deflector 2 pc.",
+                "Smoke"
+              ],
+              "applicationBased": true,
+              "pla": "VEN",
+              "plaName": "Auto Ventshade (AVS)",
+              "warrantyCode": "1YR",
+              "warrantyDescription": "1 YR REPLACEMENT IF DEFECTIVE",
+              "qualityRatingCode": "3",
+              "qualityRatingDescription": "Best",
+              "productDescription": "Ventvisor; Deflector 2 pc.",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/1850349",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/VEN/92729",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/assets/epc125x125/std.lang.all/1009434444.jpg",
+                  "typeCode": "P04",
+                  "typeDesc": "Photo - Primary"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "N",
+              "primaryFlag": true,
+              "sku": "10248874"
+            },
+            {
+              "perCarQty": 1,
+              "partNo": "70698",
+              "fitmentNotes": [
+                "Body Type:Coupe"
+              ],
+              "generalNotes": [
+                "Light Tint"
+              ],
+              "applicationBased": true,
+              "pla": "WTH",
+              "plaName": "WeatherTech",
+              "warrantyCode": "3YRC",
+              "warrantyDescription": "3 YR REPLACEMENT IF DEFECTIVE",
+              "qualityRatingCode": "4",
+              "qualityRatingDescription": "Premium",
+              "productDescription": "SideWindowVent",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/509315",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/WTH/70698",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/images/epc125x125/no-image.jpg"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "Y",
+              "primaryFlag": false,
+              "sku": "10902414"
+            },
+            {
+              "perCarQty": 1,
+              "partNo": "70699",
+              "fitmentNotes": [
+                "Sub Model:Touring,DX,HF,Hybrid,Hybrid-L,Natural Gas",
+                "Sub Model:LX,EX,Si,EX-L | Body Type:Sedan"
+              ],
+              "generalNotes": [
+                "Light Tint"
+              ],
+              "applicationBased": true,
+              "pla": "WTH",
+              "plaName": "WeatherTech",
+              "warrantyCode": "3YRC",
+              "warrantyDescription": "3 YR REPLACEMENT IF DEFECTIVE",
+              "qualityRatingCode": "4",
+              "qualityRatingDescription": "Premium",
+              "productDescription": "SideWindowVent",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/531981",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/WTH/70699",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/images/epc125x125/no-image.jpg"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "Y",
+              "primaryFlag": false,
+              "sku": "10902472"
+            },
+            {
+              "perCarQty": 1,
+              "partNo": "80698",
+              "fitmentNotes": [
+                "Body Type:Coupe"
+              ],
+              "generalNotes": [
+                "Dark Tint"
+              ],
+              "applicationBased": true,
+              "pla": "WTH",
+              "plaName": "WeatherTech",
+              "warrantyCode": "3YRC",
+              "warrantyDescription": "3 YR REPLACEMENT IF DEFECTIVE",
+              "qualityRatingCode": "4",
+              "qualityRatingDescription": "Premium",
+              "productDescription": "SideWindowVent",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/988157",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/WTH/80698",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/images/epc125x125/no-image.jpg"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "N",
+              "primaryFlag": false,
+              "sku": "10902569"
+            },
+            {
+              "perCarQty": 1,
+              "partNo": "80699",
+              "fitmentNotes": [
+                "Sub Model:Touring,DX,HF,Hybrid,Hybrid-L,Natural Gas",
+                "Sub Model:LX,EX,Si,EX-L | Body Type:Sedan"
+              ],
+              "generalNotes": [
+                "Dark Tint"
+              ],
+              "applicationBased": true,
+              "pla": "WTH",
+              "plaName": "WeatherTech",
+              "warrantyCode": "3YRC",
+              "warrantyDescription": "3 YR REPLACEMENT IF DEFECTIVE",
+              "qualityRatingCode": "4",
+              "qualityRatingDescription": "Premium",
+              "productDescription": "SideWindowVent",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/688430",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/WTH/80699",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/images/epc125x125/no-image.jpg"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "Y",
+              "primaryFlag": false,
+              "sku": "10902597"
+            }
+          ]
+        },
+        {
+          "partTerminologyName": "Side Window Vent",
+          "itemTypeTypeCode": "A",
+          "itemTypeTypeDescription": "Application",
+          "position": "Rear",
+          "primaryProductCount": 0,
+          "secondaryProductCount": 1,
+          "sortedproducts": [
+            {
+              "perCarQty": 1,
+              "partNo": "71699",
+              "fitmentNotes": [
+                "Sub Model:Touring,DX,HF,Hybrid,Hybrid-L,Natural Gas",
+                "Sub Model:LX,EX,Si,EX-L | Body Type:Sedan"
+              ],
+              "generalNotes": [
+                "Light Tint"
+              ],
+              "applicationBased": true,
+              "pla": "WTH",
+              "plaName": "WeatherTech",
+              "warrantyCode": "3YRC",
+              "warrantyDescription": "3 YR REPLACEMENT IF DEFECTIVE",
+              "qualityRatingCode": "4",
+              "qualityRatingDescription": "Premium",
+              "productDescription": "SideWindowVent",
+              "productDetailLink": "http://sdecsvctest02:8080/product/api/productdetails/id/1530658",
+              "buyersGuideLink": "http://sdecsvctest02:8080/buyersguide/api/vehiclesummaries/WTH/71699",
+              "imageLinks": [
+                {
+                  "thumbUrl": "http://pdfifsvcprd.corp.advancestores.com/images/epc125x125/no-image.jpg"
+                }
+              ],
+              "fdoableFlag": "Y",
+              "discontinuedFlag": "Y",
+              "primaryFlag": false,
+              "sku": "10902196"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
