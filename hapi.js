@@ -4,6 +4,7 @@
 const Hapi = require('hapi');
 const Blipp = require('blipp');
 const Joi = require('joi');
+const Inert = require('inert');
 const server = new Hapi.Server();
 
 server.connection({
@@ -30,12 +31,27 @@ server.route({
         cache: {
             expiresIn:3600000
         }
-    },
-
+    }
 });
 
+server.route({
+        method: 'GET',
+        path: '/partslookup',
+    config: {
+        description: 'Return an object with hello message',
+        pre: [],
+        handler: function(request,reply) {
+            reply.file('testdata.json');
+        },
+        cache: {
+            expiresIn:3600000
+        }
+        }
+       });
+
+
 // Register plugins and such...
-server.register(Blipp,(err)=> {
+server.register([Blipp,Inert], (err)=> {
     if(err) {
         throw err;
     }
