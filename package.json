@@ -1,0 +1,24 @@
+{
+  "name": "hapiproject",
+  "version": "1.0.0",
+  "description": "Hapi Test services for testing gulp and angular.",
+  "main": "hapi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelKilleenSandbox/hapiproject.git"
+  },
+  "author": "Mike Killeen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelKilleenSandbox/hapiproject/issues"
+  },
+  "homepage": "https://github.com/MichaelKilleenSandbox/hapiproject#readme",
+  "devDependencies": {
+    "blipp": "^2.3.0",
+    "hapi": "^15.1.1",
+    "joi": "^9.1.0"
+  }
+}
