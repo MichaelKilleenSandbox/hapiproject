@@ -6,7 +6,7 @@ const Blipp = require('blipp');
 const Joi = require('joi');
 const Inert = require('inert');
 const Boom = require('boom');
-const Vision = require('vision');
+//const Vision = require('vision');
 
 const server = new Hapi.Server();
 
