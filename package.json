@@ -18,12 +18,15 @@
   "homepage": "https://github.com/MichaelKilleenSandbox/hapiproject#readme",
   "devDependencies": {
     "blipp": "^2.3.0",
+    "boom": "^4.1.0",
     "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.1",
     "gulp-util": "^3.0.7",
     "hapi": "^15.1.1",
     "inert": "^4.0.2",
     "joi": "^9.1.0",
-    "jshint-stylish": "^2.2.1"
+    "jshint": "^2.9.3",
+    "jshint-stylish": "^2.2.1",
+    "vision": "^4.1.0"
   }
 }
