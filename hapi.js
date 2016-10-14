@@ -11,20 +11,37 @@ const Boom = require('boom');
 
 const server = new Hapi.Server();
 
+/**
+ * Function that will decorate Hapi reply object.
+ *
+ * @this {???}
+ * @return {object} Returns the name.
+ */
 const hello = function(name) {
     return this.response({
         hello: name
     });
 }
 
-// Defines a new handler for routes on this server.
+/**
+ * Add hello function to Hapi reply.
+ *
+ */
 server.decorate('reply', 'hello', hello);
 
+/**
+ * Setup server connection.
+ *
+ */
 server.connection({
     port: process.env.PORT || 1337,
     host: process.env.IP || 'localhost'
 });
 
+/**
+ * Route that uses the decorated reply object.
+ *
+ */
 server.route({
     method: 'GET',
     path: '/{name}',
@@ -33,7 +50,10 @@ server.route({
     }
 });
 
-// Routes
+/**
+ * Route that is an example of a larger config object.
+ *
+ */
 server.route({
     method: 'GET',
     path: '/hello/{name}',
