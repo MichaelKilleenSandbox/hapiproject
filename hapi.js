@@ -17,7 +17,7 @@ const server = new Hapi.Server();
  * @this {???}
  * @return {object} Returns the name.
  */
-const hello = function(name) {
+const hello = function(name) {git 
     return this.response({
         hello: name
     });
@@ -36,6 +36,21 @@ server.decorate('reply', 'hello', hello);
 server.connection({
     port: process.env.PORT || 1337,
     host: process.env.IP || 'localhost'
+});
+
+/**
+ * Register plugins and such...
+ */
+server.register([Blipp, Inert], (err) => {
+    if (err) {
+        throw err;
+    }
+    server.start((err) => {
+        if (err) {
+            throw err;
+        }
+        console.log(`Server running at ${server.info.uri}`);
+    });
 });
 
 /**
@@ -100,15 +115,3 @@ server.route({
     }
 });
 
-// Register plugins and such...
-server.register([Blipp, Inert], (err) => {
-    if (err) {
-        throw err;
-    }
-    server.start((err) => {
-        if (err) {
-            throw err;
-        }
-        console.log(`Server running at ${server.info.uri}`);
-    });
-});
