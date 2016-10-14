@@ -11,21 +11,23 @@ const Boom = require('boom');
 const server = new Hapi.Server();
 
 const hello = function(name) {
-    return this.response({hello:name});
+    return this.response({
+        hello: name
+    });
 }
 
 // Defines a new handler for routes on this server.
-server.decorate('reply','hello',hello);
+server.decorate('reply', 'hello', hello);
 
 server.connection({
-    port: 1337,
-    host: 'localhost'
+    port: process.env.PORT || 1337,
+    host: process.env.IP || 'localhost'
 });
 
 server.route({
     method: 'GET',
     path: '/{name}',
-    handler: function (request, reply) {
+    handler: function(request, reply) {
         return reply.hello(request.params.name);
     }
 });
@@ -42,9 +44,11 @@ server.route({
             }
         },
         pre: [],
-        handler: function (request, reply) {
+        handler: function(request, reply) {
             const name = request.params.name;
-            return reply({message: `Hello ${name}`});
+            return reply({
+                message: `Hello ${name}`
+            });
         },
         cache: {
             expiresIn: 3600000
@@ -58,7 +62,7 @@ server.route({
     config: {
         description: 'Return an object with hello message',
         pre: [],
-        handler: function (request, reply) {
+        handler: function(request, reply) {
             reply.file('testdata.json');
         },
         cache: {
@@ -76,11 +80,11 @@ server.route({
 });
 
 // Register plugins and such...
-server.register([Blipp, Inert], (err)=> {
+server.register([Blipp, Inert], (err) => {
     if (err) {
         throw err;
     }
-    server.start((err)=> {
+    server.start((err) => {
         if (err) {
             throw err;
         }
