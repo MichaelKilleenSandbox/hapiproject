@@ -1,5 +1,6 @@
 /**
  * Created by mike.killeen on 10/7/2016.
+ * Test 123
  */
 const Hapi = require('hapi');
 const Blipp = require('blipp');
@@ -10,9 +11,6 @@ const Boom = require('boom');
 
 const server = new Hapi.Server();
 
-/**
- * Used to decorate the handler
- */ 
 const hello = function(name) {
     return this.response({
         hello: name
@@ -22,18 +20,11 @@ const hello = function(name) {
 // Defines a new handler for routes on this server.
 server.decorate('reply', 'hello', hello);
 
-/**
- * Set up the server host and port.
- * Uses process.env to run on Cloud9
- */ 
 server.connection({
     port: process.env.PORT || 1337,
     host: process.env.IP || 'localhost'
 });
 
-/**
- * A route that uses the function that we decorated reply with earlier.
- */ 
 server.route({
     method: 'GET',
     path: '/{name}',
