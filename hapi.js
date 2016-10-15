@@ -18,7 +18,7 @@ const server = new Hapi.Server();
  * @this {???}
  * @return {object} Returns the name.
  */
-const hello = function(name) {git 
+const hello = function(name) { 
     return this.response({
         hello: name
     });
