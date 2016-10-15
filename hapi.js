@@ -1,7 +1,7 @@
 /**
  * Created by mike.killeen on 10/7/2016.
  * Test 123 This is the static page version.
- * A quick change from Code.
+ * A quick change from Code. Bingo
  */
 const Hapi = require('hapi');
 const Blipp = require('blipp');
