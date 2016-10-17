@@ -13,23 +13,6 @@ const Boom = require('boom');
 
 const server = new Hapi.Server();
 
-/**
- * Function that will decorate Hapi reply object.
- *
- * @this {???}
- * @return {object} Returns the name.
- */
-const hello = function(name) {
-    return this.response({
-        hello: name
-    });
-}
-
-/**
- * Add hello function to Hapi reply.
- *
- */
-server.decorate('reply', 'hello', hello);
 
 /**
  * Setup server connection.
@@ -43,24 +26,30 @@ server.connection({
 /**
  * Register plugins and such...
  */
-server.register([Blipp, Inert], (err) => {
+server.register(require('inert'), (err) => {
+
+    if (err) {
+        throw err;
+    }
+
     server.route({
         method: 'GET',
         path: '/{param*}',
         handler: {
             directory: {
-                path: Path.join(__dirname,'public'),
+                path: 'public',
                 listing: true
             }
         }
     });
 
+
     server.start((err) => {
+
         if (err) {
             throw err;
         }
-        console.log('Dir: ' + __dirname);
-        console.log(`Server running at ${server.info.uri}`);
+
+        console.log('Server running at:', server.info.uri);
     });
 });
-
