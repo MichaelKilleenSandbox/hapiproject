@@ -7,6 +7,7 @@ const Blipp = require('blipp');
 const Joi = require('joi');
 const Inert = require('inert');
 const Boom = require('boom');
+const BaseRoute = require('./plugins/base-route');
 //const Vision = require('vision');
 
 const server = new Hapi.Server();
@@ -33,7 +34,7 @@ server.connection({
 // });
 
 // Register plugins and such...
-server.register(require('./plugins/base-route'), (err) => {
+server.register([BaseRoute,Blipp], (err) => {
     if (err) {
         throw err;
     }

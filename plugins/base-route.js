@@ -1,3 +1,5 @@
+const Joi = require('joi');
+
 var baseRoutes = {
   register: function (server, options, next) {
     // add “hello world” route
@@ -8,6 +10,29 @@ var baseRoutes = {
         reply('Hello From APEX!');
       }
     });
+
+   server.route({
+    method: 'GET',
+    path: '/hello/{name}',
+    config: {
+        description: 'Return an object with hello message',
+        validate: {
+            params: {
+                name: Joi.string().min(3).required()
+            }
+        },
+        pre: [],
+        handler: function(request, reply) {
+            const name = request.params.name;
+            return reply({
+                message: `Hello ${name}`
+            });
+        },
+        cache: {
+            expiresIn: 3600000
+        }
+    }
+});
 
     next();
   }
