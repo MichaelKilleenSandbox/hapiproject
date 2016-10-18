@@ -1,5 +1,6 @@
 const Joi = require('joi');
 const Moment = require('moment');
+var Good = require('good')
 
 var baseRoutes = {
   register: function (server, options, next) {
