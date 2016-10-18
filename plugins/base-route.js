@@ -1,4 +1,5 @@
 const Joi = require('joi');
+const Moment = require('moment');
 
 var baseRoutes = {
   register: function (server, options, next) {
@@ -7,7 +8,8 @@ var baseRoutes = {
       method: 'GET',
       path: '/',
       handler: function (request, reply) {
-        reply('Hello From APEX!');
+        reply('Hello From APEX! ' + (new Date()));
+        // + Moment.format('MMMM do YYYY h:mm:ss a')
       }
     });
 

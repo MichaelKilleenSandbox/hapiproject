@@ -4,9 +4,6 @@
  */
 const Hapi = require('hapi');
 const Blipp = require('blipp');
-const Joi = require('joi');
-const Inert = require('inert');
-const Boom = require('boom');
 const BaseRoute = require('./plugins/base-route');
 //const Vision = require('vision');
 
@@ -22,16 +19,6 @@ server.connection({
     host: process.env.IP || 'localhost'
 });
 
-
-
-// // add “hello world” route
-// server.route({
-//   method: 'GET',
-//   path: '/',
-//   handler: function (request, reply) {
-//     reply('Hello Future Studio!');
-//   }
-// });
 
 // Register plugins and such...
 server.register([BaseRoute,Blipp], (err) => {
