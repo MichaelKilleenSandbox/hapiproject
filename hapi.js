@@ -1,6 +1,6 @@
 /**
  * Created by mike.killeen on 10/7/2016.
- * Testing creating and using plugins.
+ * Testing creating and using plugins. Test.
  */
 const Hapi = require('hapi');
 const Blipp = require('blipp');
