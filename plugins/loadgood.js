@@ -1,4 +1,7 @@
 // JavaScript File
+/**
+ * This may not have been a great idea.
+ */
 const Good = require('good')
 
 const loadGood = {
