@@ -1,6 +1,6 @@
 /**
  * Created by mike.killeen on 10/7/2016.
- * Test 123 This is the static page version. Code Anywhere.
+ * Test 123 This is the static page version.
  */
 const Hapi = require('hapi');
 const Blipp = require('blipp');
