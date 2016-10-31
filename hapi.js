@@ -1,33 +1,18 @@
 /**
  * Created by mike.killeen on 10/7/2016.
  * Test 123 This is the static page version.
+ * A quick change from Code. Bingo
  */
 const Hapi = require('hapi');
 const Blipp = require('blipp');
 const Joi = require('joi');
 const Inert = require('inert');
+const Path = require('path');
 const Boom = require('boom');
 //const Vision = require('vision');
 
 const server = new Hapi.Server();
 
-/**
- * Function that will decorate Hapi reply object.
- *
- * @this {???}
- * @return {object} Returns the name.
- */
-const hello = function(name) {
-    return this.response({
-        hello: name
-    });
-}
-
-/**
- * Add hello function to Hapi reply.
- *
- */
-server.decorate('reply', 'hello', hello);
 
 /**
  * Setup server connection.
@@ -39,76 +24,32 @@ server.connection({
 });
 
 /**
- * Route that uses the decorated reply object.
- *
+ * Register plugins and such...
  */
-server.route({
-    method: 'GET',
-    path: '/{name}',
-    handler: function(request, reply) {
-        return reply.hello(request.params.name);
-    }
-});
+server.register(require('inert'), (err) => {
 
-/**
- * Route that is an example of a larger config object.
- *
- */
-server.route({
-    method: 'GET',
-    path: '/hello/{name}',
-    config: {
-        description: 'Return an object with hello message',
-        validate: {
-            params: {
-                name: Joi.string().min(3).required()
-            }
-        },
-        pre: [],
-        handler: function(request, reply) {
-            const name = request.params.name;
-            return reply({
-                message: `Hello ${name}`
-            });
-        },
-        cache: {
-            expiresIn: 3600000
-        }
-    }
-});
-
-server.route({
-    method: 'GET',
-    path: '/partslookup',
-    config: {
-        description: 'Return an object with hello message',
-        pre: [],
-        handler: function(request, reply) {
-            reply.file('testdata.json');
-        },
-        cache: {
-            expiresIn: 3600000
-        }
-    }
-});
-
-server.route({
-    method: '*',
-    path: '/{p*}',
-    handler: function(request, reply) {
-        return reply('The page was not found:' + request.path).code(404);
-    }
-});
-
-// Register plugins and such...
-server.register([Blipp, Inert], (err) => {
     if (err) {
         throw err;
     }
+
+    server.route({
+        method: 'GET',
+        path: '/{param*}',
+        handler: {
+            directory: {
+                path: 'public',
+                listing: true
+            }
+        }
+    });
+
+
     server.start((err) => {
+
         if (err) {
             throw err;
         }
-        console.log(`Server running at ${server.info.uri}`);
+
+        console.log('Server running at:', server.info.uri);
     });
 });
